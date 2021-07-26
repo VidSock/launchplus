@@ -164,7 +164,6 @@ collections:
                 name: companyname
                 label: Company Name
                 required: True
-                
 
           - label: "Google Analytics"
             name: ga
@@ -225,15 +224,6 @@ collections:
       - label: "Dark Theme"
         name: "darkthemescolors"
         file: "src/util/dark-theme-colors.json"
-        fields:
-          - label: "Primary Color"
-            name: "siteColor"
-            widget: "color"
-            enableAlpha: true
-            allowInput: true
-      - label: "Default Theme"
-        name: "themescolors"
-        file: "src/util/default-colors.json"
         fields:
           - label: "Primary Color"
             name: "siteColor"
