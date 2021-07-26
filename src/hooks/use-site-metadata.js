@@ -13,6 +13,7 @@ export const useSiteMetadata = () => {
           siteImage
           twitter
           iconimage
+          companyname
           }
         }
       }

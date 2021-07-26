@@ -1,5 +1,5 @@
 import * as React from "react"
-
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Social from "../components/social"
 
 import Icons from "../util/socialmedia.json"
@@ -32,6 +32,7 @@ import {
 
 
 const sIcons = Icons.socialIcons.map((icons, index) => {
+  
   return (
 
 
@@ -153,7 +154,9 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
   )
 })
 
+
 export function Footer() {
+  const { companyname } = useSiteMetadata()
   return (
 
     
@@ -179,7 +182,7 @@ export function Footer() {
   
   
   
-  <div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} Todd Lambert - hand crafted Gatsby on Netlify</div>
+  <div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname} - hand crafted Gatsby on Netlify</div>
       </nav>
    
     </footer>
