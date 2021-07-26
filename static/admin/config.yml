@@ -163,7 +163,7 @@ collections:
               - widget: string
                 name: companyname
                 label: Company Name
-                required: True
+                required: true
 
           - label: "Google Analytics"
             name: ga
