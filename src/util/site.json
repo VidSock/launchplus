@@ -1,19 +1,20 @@
 {
   "meta": {
-    "title": "Site Title",
-    "titleTemplate": "%s",
-    "description": "Site Description",
-    "siteUrl": "https://twilightscapes.com/",
-    "image": "/assets/default-og-image.jpg",
-    "iconimage": "/assets/tw-logo-white.svg",
+    "iconimage": "/assets/toddtravels-logo-white-transparent-300dpi.png",
     "companyname": "your name here",
+    "siteUrl": "https://lambertphotography.com/",
     "twitterUsername": "yourtwittername",
-    "siteTitle": "Site Title",
     "siteTitleDefault": "Site Title Default",
-    "hrefLang": "en",
-    "siteDescription":"Site Description",
+    "siteTitle": "Site Title",
+    "titleTemplate": "%s",
+    "twitter": "yourtwittername",
     "siteImage": "/default-og-image.jpg",
-    "twitter": "yourtwittername"
+    "siteDescription": "Site Description",
+    "title": "Site Title",
+    "hrefLang": "en",
+    "image": "/assets/default-og-image.jpg",
+    "description": "Site Description"
   },
-  "ga": "yourgooglenumberhere"
+  "ga": "yourgooglenumberhere",
+  "companyname": "Lambert Photography"
 }
