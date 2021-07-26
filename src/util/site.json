@@ -1,6 +1,7 @@
 {
   "meta": {
     "iconimage": "/assets/toddtravels-logo-white-transparent-300dpi.png",
+    "companyname": "Lambert Poops",
     "siteUrl": "https://lambertphotography.com/",
     "twitterUsername": "yourtwittername",
     "siteTitleDefault": "Site Title Default",
@@ -12,8 +13,7 @@
     "title": "Site Title",
     "hrefLang": "en",
     "image": "/assets/default-og-image.jpg",
-    "description": "Site Description",
-    "companyname": "Lambert Photography"
+    "description": "Site Description"
   },
   "ga": "yourgooglenumberhere"
 }
