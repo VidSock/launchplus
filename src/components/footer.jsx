@@ -182,7 +182,7 @@ export function Footer() {
   
   
   
-  <div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname} - hand crafted Gatsby on Netlify</div>
+  <div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname} - site by:<a href="https://toddlambert.com">Todd Lambert</a></div>
       </nav>
    
     </footer>

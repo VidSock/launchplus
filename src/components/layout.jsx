@@ -217,7 +217,7 @@ Contact Me<span>Ordering Questions?</span>
       <li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/photos/">
       
-              View Photos <span style={{color:'#FA02B7',}}>start here</span>
+              View Photos <span style={{color:'var(--primary-color)',}}>start here</span>
               </Link>
       </li> 
     

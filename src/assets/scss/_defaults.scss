@@ -9,8 +9,8 @@ body {
   padding: 0;
 }
 body {
-  // font-family: var(--font-family);
-  // font-size: 18px;
+  font-family: var(--font-family);
+  font-size: 18px;
 }
 code {
   font-family: var(--font-family-mono);
@@ -22,8 +22,8 @@ main {
 }
 a {
   color: var(--home-link-color);
-  text-decoration: underline;
+  text-decoration: none;
   &:hover {
-    color: var(--home-link-hover-color);
+    color: var(--home-link-color-hover);
   }
 }
