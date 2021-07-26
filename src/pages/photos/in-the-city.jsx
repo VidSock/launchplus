@@ -5,7 +5,7 @@ import { ProductListing } from "../../components/product-listing"
 import { FiZoomIn } from 'react-icons/fi'
 import { Seo } from "../../components/seo"
 import GoBack from "../../components/goBack"
-import GalleryMenu from "../../components/galleryMenu"
+// import GalleryMenu from "../../components/galleryMenu"
 import CommentBox from "../../components/commentbox"
 import ShareSocial from '../../components/share' 
 // import { Helmet } from "react-helmet"
@@ -126,7 +126,7 @@ export const query = graphql`
 <br />
 <br />
 
-<GalleryMenu />
+{/* <GalleryMenu /> */}
 
  <br /><br />
  <ShareSocial />
@@ -141,7 +141,7 @@ export const query = graphql`
 </div>
 <br /><br />
 
-<GalleryMenu />
+{/* <GalleryMenu /> */}
 
 <br /><br />
 <GoBack />

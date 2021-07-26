@@ -89,12 +89,14 @@ export function Layout({ children }) {
 </span>
     </div> */}
 
-<span>MENU</span><IoMdFingerPrint style={{fontSize:'60px', marginLeft:'20px' }}/>
 
 
-    {/* <div className="spinner diagonal part-1"></div>
+{/* <IoMdFingerPrint style={{fontSize:'60px', marginLeft:'20px' }}/> */}
+
+<span>MENU</span>
+    <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>
-    <div className="spinner diagonal part-2"></div> */}
+    <div className="spinner diagonal part-2"></div>
   </label>
 
 
@@ -151,9 +153,9 @@ export function Layout({ children }) {
 
 
  <li className="carto">
- {/* <Link className="navbar-item txtshadow" to="/contact/">
-Contact Me<span>I love feedback!</span>
-</Link> */}
+ <Link className="navbar-item txtshadow" to="/contact/">
+Contact Us<span></span>
+</Link>
 
 
 
@@ -167,27 +169,27 @@ Contact Me<span>Ordering Questions?</span>
 
 
 
-      <li className="carto">
+      {/* <li className="carto">
       <Link className="navbar-item txtshadow" to="/photo-tools/">Twilight Tools<span>Lighting and Gear</span></Link>
+       </li> */}
+
+
+      <li className="carto">
+              <Link className="navbar-item txtshadow" to="/about/">
+                About Us <span>Our story</span>
+              </Link>
+      </li>
+
+      <li className="carto">
+      <Link className="navbar-item txtshadow" to="/articles/">Blog<span>Latest Posts</span></Link>
        </li>
 
 
       {/* <li className="carto">
-              <Link className="navbar-item txtshadow" to="/about/">
-                About Me <span>My story</span>
-              </Link>
-      </li> */}
-
-      <li className="carto">
-      <Link className="navbar-item txtshadow" to="/articles/">Articles<span>My rants &amp; raves</span></Link>
-       </li>
-
-
-      <li className="carto">
               <Link className="navbar-item txtshadow" to="/nft/">
                 NFT Collectibles <span>Limited Editions</span>
               </Link>
-      </li>
+      </li> */}
 
 
       {/* <li className="carto">

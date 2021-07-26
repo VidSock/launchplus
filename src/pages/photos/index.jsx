@@ -6,7 +6,7 @@ import { Seo } from "../../components/seo"
 import { Layout } from "../../components/layout"
 import { ProductListing } from "../../components/product-listing"
 import { FaHandPointDown } from "react-icons/fa"
-import GalleryMenu from "../../components/galleryMenu"
+// import GalleryMenu from "../../components/galleryMenu"
 // import { Helmet } from "react-helmet"
 // import TouchUp from '../components/TouchUp'
 import { RiSendPlane2Line } from "react-icons/ri"
@@ -82,7 +82,7 @@ export default function GalleryPage({ data }) {
 
 
 
-<GalleryMenu />
+{/* <GalleryMenu /> */}
 
 
     

@@ -812,9 +812,9 @@ input[type=checkbox] {
   position: fixed;
   z-index: 4;
   top: 77vh;
-  right: 3vw;
-  height: 100px;
-  width: 100px;
+  right: 20px;
+  /* height: 100px;
+  width: 100px; */
   color: #999;
   text-align: center;
   display: flex;
@@ -884,12 +884,12 @@ filter: drop-shadow(1px 1px 1px #FA02B7);
 }
 
 .spinner {
-  visibility: hidden;
+  /* visibility: hidden; */
   transition: all 0.3s;
   box-sizing: border-box;
   position: absolute;
   height: 5px;
-  width: 100%;
+  width: 55px;
   background-color: #FA02B7;
 }
 .horizontal {
@@ -1463,6 +1463,7 @@ border:1px solid #222;
 
 
       .intro:before, .poof{
+        display: none;
         position:absolute;
         top:0;
         left:0;
@@ -1521,6 +1522,7 @@ background: rgba(0,0,0,0.6);
 
 
         body.homepage .intro:before{
+          
           content: "Follow Me Into The Night";
         position:fixed;
    left:0;
@@ -1528,6 +1530,7 @@ background: rgba(0,0,0,0.6);
    right:0;
    filter: drop-shadow(1px 1px 4px rgba(255, 2, 213, 0.9));
         display: flex;
+        display:none;
         align-items: center;
         justify-content: center;
         align-self:center;

@@ -12,7 +12,7 @@ import CommentBox from "../../components/commentbox"
 // import { FaSquareFull } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
 import { FiZoomIn } from 'react-icons/fi'
-import GalleryMenu from "../../components/galleryMenu"
+// import GalleryMenu from "../../components/galleryMenu"
 import { FaHandPointDown } from "react-icons/fa"
 import ShareSocial from '../../components/share' 
 
@@ -129,7 +129,7 @@ export const query = graphql`
 
 
 
-<GalleryMenu />
+{/* <GalleryMenu /> */}
 
 <br /><br />
  <ShareSocial />
@@ -138,7 +138,7 @@ export const query = graphql`
 </div>
 <br /><br />
 
-<GalleryMenu />
+{/* <GalleryMenu /> */}
 
 <br /><br />
 <GoBack />

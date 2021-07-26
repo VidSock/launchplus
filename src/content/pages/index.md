@@ -1,8 +1,8 @@
 ---
 template: index-page
 slug: /
-title: Night Photography
-tagline: Twilightscapes - Night Photography by Todd Lambert
+title: Lambert Photography
+tagline: Photography by Todd Lambert
 featuredImage: /assets/night316.jpg
 cta:
   ctaText: See the photos

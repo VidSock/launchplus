@@ -286,7 +286,7 @@ export default function Product({ data: { product, suggestions } }) {
             </span>
             
 
-<ProductDetails />
+{/* <ProductDetails /> */}
 
 </div>
 
@@ -296,7 +296,7 @@ export default function Product({ data: { product, suggestions } }) {
 <GoBack />
 </div>
 
-            <p style={{fontSize:'100%', margin:'4rem 0.8rem 0', padding:'0', lineHeight:'auto', textAlign:'center', fontWeight:'bold'}}>Turn this into a great print here:</p>
+            {/* <p style={{fontSize:'100%', margin:'4rem 0.8rem 0', padding:'0', lineHeight:'auto', textAlign:'center', fontWeight:'bold'}}>Turn this into a great print here:</p>
             
             <div style={{display:'flex', gap:'10px',padding:'0 ', margin:'0 0 2rem 0', justifyContent:'center' }}>
 
@@ -305,7 +305,7 @@ export default function Product({ data: { product, suggestions } }) {
 
 <div style={{width:'100%', maxWidth:'200px'}}><a href="https://www.printique.com" target="_blank" rel="noopener noreferrer nofollow">
 <StaticImage src="../../../img/printique-logo.png" alt="Print This On Printique" />
-</a></div>
+</a></div> */}
 
 </div>
 
@@ -334,7 +334,7 @@ export default function Product({ data: { product, suggestions } }) {
         
 </div>
 
-<br />
+{/* <br />
 <br />
 <h3 style={{fontSize:'130%', fontWeight:'bold', textAlign:'center'}}>Other projects by Todd</h3>
 
@@ -348,11 +348,11 @@ export default function Product({ data: { product, suggestions } }) {
  
  Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. 
  
- <h5 style={{textAlign:'center',}}>Visit UrbanFetish.com</h5></a>
+ <h5 style={{textAlign:'center',}}>Visit UrbanFetish.com</h5></a> */}
 
 
 
-            </div>
+            {/* </div> */}
 
             
 
@@ -390,12 +390,12 @@ export default function Product({ data: { product, suggestions } }) {
       </div>
 
 
-      <div className="print"><h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a private question or comment?</h3>
+      {/* <div className="print"><h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a private question or comment?</h3>
 
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
 </ScrollAnimation>
-</div>
+</div> */}
 
       </CustomBox>
     </Layout>

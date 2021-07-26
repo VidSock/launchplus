@@ -1,6 +1,6 @@
 ---
 template: about-page
-slug: /about-twilightscapes
+slug: /about
 title: About Todd Lambert and Twilightscapes
 ---
 
