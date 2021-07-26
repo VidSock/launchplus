@@ -160,15 +160,16 @@ collections:
                 name: twitterUsername
                 label: Twitter
                 required: false
+              - widget: string
+                name: companyname
+                label: Company Name
+                required: True
+                
 
           - label: "Google Analytics"
             name: ga
             widget: string
             hint: "Add you tracking ID, for example UA-XXXXXXXXX-X"
-          - label: "Company Name"
-            name: companyname
-            widget: string
-            hint: "Your Company Name"
       - label: Social Icons
         name: socialIcons
         file: "src/util/socialmedia.json"
@@ -224,6 +225,15 @@ collections:
       - label: "Dark Theme"
         name: "darkthemescolors"
         file: "src/util/dark-theme-colors.json"
+        fields:
+          - label: "Primary Color"
+            name: "siteColor"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+      - label: "Default Theme"
+        name: "themescolors"
+        file: "src/util/default-colors.json"
         fields:
           - label: "Primary Color"
             name: "siteColor"
