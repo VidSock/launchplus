@@ -2,26 +2,174 @@ import * as React from "react"
 
 import Social from "../components/social"
 
+import Icons from "../util/socialmedia.json"
+import {
+  RiFacebookBoxFill,
+  RiTwitterFill,
+  RiLinkedinBoxFill,
+  RiYoutubeFill,
+  RiInstagramFill,
+  RiRssFill,
+  RiGithubFill,
+  RiTelegramFill,
+  RiPinterestFill,
+  RiSnapchatFill,
+  RiSkypeFill,
+  RiDribbbleFill,
+  RiMediumFill,
+  RiBehanceFill,
+} from "react-icons/ri"
+import { FaWordpress, FaVk } from "react-icons/fa"
+
+
 import { Link } from "gatsby"
 import {
   footerStyle,
   links,
   blurb,
-  logos,
+  // logos,
 } from "./footer.module.css"
+
+
+const sIcons = Icons.socialIcons.map((icons, index) => {
+  return (
+
+
+    <div key={"social icons" + index}>
+      {icons.icon === "facebook" ? (
+        <Link className="social" to={icons.url} target="_blank">
+          <RiFacebookBoxFill />
+        </Link>
+      ) : (
+        ""
+      )}
+      {icons.icon === "twitter" ? (
+        <Link className="social" to={icons.url} target="_blank">
+          <RiTwitterFill />
+        </Link>
+      ) : (
+        ""
+      )}
+      {icons.icon === "linkedin" ? (
+        <Link className="social" to={icons.url} target="_blank">
+          <RiLinkedinBoxFill />
+        </Link>
+      ) : (
+        ""
+      )}
+      {icons.icon === "youtube" ? (
+        <Link className="social" to={icons.url} target="_blank">
+          <RiYoutubeFill />
+        </Link>
+      ) : (
+        ""
+      )}
+      {icons.icon === "instagram" ? (
+        <Link className="social" to={icons.url} target="_blank">
+          <RiInstagramFill />
+        </Link>
+      ) : (
+        ""
+      )}
+      {icons.icon === "rss" ? (
+        <Link className="social" to={icons.url} target="_blank">
+          <RiRssFill />
+        </Link>
+      ) : (
+        ""
+      )}
+      {icons.icon === "github" ? (
+        <Link className="social" to={icons.url} target="_blank">
+          <RiGithubFill />
+        </Link>
+      ) : (
+        ""
+      )}
+      {icons.icon === "telegram" ? (
+        <Link className="social" to={icons.url} target="_blank">
+          <RiTelegramFill />
+        </Link>
+      ) : (
+        ""
+      )}
+      {icons.icon === "pinterest" ? (
+        <Link className="social" to={icons.url} target="_blank">
+          <RiPinterestFill />
+        </Link>
+      ) : (
+        ""
+      )}
+      {icons.icon === "snapchat" ? (
+        <Link className="social" to={icons.url} target="_blank">
+          <RiSnapchatFill />
+        </Link>
+      ) : (
+        ""
+      )}
+      {icons.icon === "skype" ? (
+        <Link className="social" to={icons.url} target="_blank">
+          <RiSkypeFill />
+        </Link>
+      ) : (
+        ""
+      )}
+      {icons.icon === "wordpress" ? (
+        <Link className="social" to={icons.url} target="_blank">
+          <FaWordpress />
+        </Link>
+      ) : (
+        ""
+      )}
+      {icons.icon === "dribbble" ? (
+        <Link className="social" to={icons.url} target="_blank">
+          <RiDribbbleFill />
+        </Link>
+      ) : (
+        ""
+      )}
+      {icons.icon === "medium" ? (
+        <Link to={icons.url} target="_blank">
+          <RiMediumFill />
+        </Link>
+      ) : (
+        ""
+      )}
+      {icons.icon === "behance" ? (
+        <Link to={icons.url} target="_blank">
+          <RiBehanceFill />
+        </Link>
+      ) : (
+        ""
+      )}
+      {icons.icon === "vk" ? (
+        <Link className="social" to={icons.url} target="_blank">
+          <FaVk />
+        </Link>
+      ) : (
+        ""
+      )}
+    </div>
+
+  )
+})
 
 export function Footer() {
   return (
 
     
-    <footer className={footerStyle} style={{padding:'10px 0', marginTop:'0', position:'',}}>
+    <footer className={footerStyle} style={{padding:'10px 0', marginTop:'0',}}>
       <div className={blurb}>
 
 
         <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'2rem'}}>Contact Us</Link>
 
  <div >
-        <Social />
+        {/* <Social /> */}
+
+        <div className="social-icons" style={{textAlign:'center', justifyContent:'center', margin:'3rem 5px'}}>
+  <div className="socialtext" style={{fontSize:'14px'}}>I&apos;m<br />Social</div>
+        {sIcons}
+        </div>
         </div>
 
         
@@ -39,4 +187,3 @@ export function Footer() {
 }
 
 
-{/* <Link to="/legal/" state={{modal: true}}>View License Agreement</Link> */}

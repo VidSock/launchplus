@@ -152,7 +152,7 @@ collections:
               - widget: image
                 name: image
                 label: image
-                default: "/assets/stackrole.png"
+                default: "/assets/todd.jpg"
               - widget: image
                 name: iconimage
                 label: favicon
@@ -165,6 +165,10 @@ collections:
             name: ga
             widget: string
             hint: "Add you tracking ID, for example UA-XXXXXXXXX-X"
+          - label: "Company Name"
+            name: companyname
+            widget: string
+            hint: "Your Company Name"
       - label: Social Icons
         name: socialIcons
         file: "src/util/socialmedia.json"

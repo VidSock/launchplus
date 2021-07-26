@@ -3,11 +3,11 @@ import { jsx } from "theme-ui"
 import React from 'react'
 import { FaHandPointDown } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 
 
 import { Link, graphql } from "gatsby"
-import { RiArrowRightLine, RiArrowRightSLine, RiArrowLeftLine, RiStarLine} from "react-icons/ri"
+import { RiArrowRightLine, RiArrowLeftLine} from "react-icons/ri"
 
 
 import PostCard from "../components/post-card"
@@ -15,7 +15,7 @@ import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 
 
-import { Slide } from 'react-slideshow-image'
+// import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
 
 
@@ -114,7 +114,7 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const { currentPage, numPages } = this.props.pageContext
-    const blogSlug = "/articles/"
+    const blogSlug = "/blog/"
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
     const prevPage =
@@ -149,7 +149,7 @@ class BlogIndex extends React.Component {
         textAlign: "center",
       }}
     >
-<h1 style={{padding:'10px', margin:'0'}}>Articles</h1>
+{/* <h1 style={{padding:'10px', margin:'0'}}>Articles</h1> */}
 
     </div>
 
@@ -416,7 +416,7 @@ class BlogIndex extends React.Component {
         clear:'both'
       }}
     >
-<h2>Lastest Articles</h2>
+<h1>Lastest Articles</h1>
 
     
     
@@ -431,11 +431,11 @@ class BlogIndex extends React.Component {
 </div>
 
 
-<h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a suggestion for an article?</h3>
+{/* <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a suggestion for an article?</h3>
 
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
-</ScrollAnimation>
+</ScrollAnimation> */}
 
       </Layout>
     )

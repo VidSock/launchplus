@@ -4,8 +4,8 @@ import { Layout } from "../components/layout"
 import { StoreContext } from "../context/store-context"
 import { LineItem } from "../components/line-item"
 import { formatPrice } from "../utils/format-price"
-import { FaHandPointDown } from "react-icons/fa"
-import ScrollAnimation from 'react-animate-on-scroll'
+// import { FaHandPointDown } from "react-icons/fa"
+// import ScrollAnimation from 'react-animate-on-scroll'
 
 import { Helmet } from "react-helmet"
 

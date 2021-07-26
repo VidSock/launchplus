@@ -7,20 +7,21 @@ import 'fontsource-hammersmith-one'
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
-import { FaHandPointDown } from "react-icons/fa"
+// import { FaHandPointDown } from "react-icons/fa"
 import TwilightLogo from "../../static/assets/TSidebarHover.svg"
 import { StoreContext } from "../context/store-context"
 import { Toast } from "./toast"
-import { FiShare } from 'react-icons/fi';
-import { FaRegPlusSquare } from 'react-icons/fa';
+// import { FiShare } from 'react-icons/fi';
+// import { FaRegPlusSquare } from 'react-icons/fa';
 import { ImArrowRight } from "react-icons/im"
 import { CartButton } from "./cart-button"
 import SearchIcon from "../../static/assets/search"
 import Theme from "../components/theme"
 // import Audio from '../assets/audio.mp3'
 // import TouchUp from '../components/TouchUp'
-import { IoMdFingerPrint } from 'react-icons/io'
+// import { IoMdFingerPrint } from 'react-icons/io'
 import "../assets/scss/style.scss"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import Consent from './Consent'
 // import Install from './install-discount'
 // 
@@ -28,13 +29,18 @@ import "../assets/scss/style.scss"
 import { navigate } from "gatsby";
 
 export function Layout({ children }) {
+  const { iconimage } = useSiteMetadata()
   const { checkout, loading, didJustAddToCart } = React.useContext(StoreContext)
+
+
 
   const items = checkout ? checkout.lineItems : []
 
   const quantity = items.reduce((total, item) => {
     return total + item.quantity
   }, 0)
+
+ 
 
   return (
     <div style={{background:''}}> 
@@ -47,7 +53,7 @@ export function Layout({ children }) {
       <div>
         {modal ? (
           <>
-          <div style={{position:'fixed', top:'4vh', right:'5vw', padding:'10px', fontSize:'40px', background:'#111 !important', filter:'none', opacity:'1 !important', zIndex:'2',  filter:' drop-shadow(0px 4px 3px #000)'}}>
+          <div style={{position:'fixed', top:'4vh', right:'5vw', padding:'10px', fontSize:'40px', background:'#111 !important', opacity:'1 !important', zIndex:'2',  filter:' drop-shadow(0px 4px 3px #000)'}}>
           <Link state={{noScroll: true }} to={closeTo}>
             <AiOutlineClose />
           </Link>
@@ -139,10 +145,18 @@ export function Layout({ children }) {
     <ul className="sidebarMenuInner post-card" style={{maxWidth:'250px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
  <li className="carta" style={{border:'none', margin:'1rem 0'}}>
-<Link to="/"> <TwilightLogo /></Link>
+<Link to="/"> 
+{/* <TwilightLogo /> */}
+<img src={iconimage} />
+</Link>
+
+
  </li>
  <li className="carto" style={{border:'none', margin:'1rem 0'}}>
-<Link to="/"> <TwilightLogo /></Link>
+<Link to="/">
+{/* <TwilightLogo /> */}
+<img src={iconimage} />
+</Link>
  </li>
  
  {/* <li className="carta" style={{border:'none', marginBottom:'1rem'}}>
@@ -181,7 +195,7 @@ Contact Me<span>Ordering Questions?</span>
       </li>
 
       <li className="carto">
-      <Link className="navbar-item txtshadow" to="/articles/">Blog<span>Latest Posts</span></Link>
+      <Link className="navbar-item txtshadow" to="/blog/">Blog<span>Latest Posts</span></Link>
        </li>
 
 

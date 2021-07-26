@@ -33,17 +33,17 @@ export default function CustomerPage({}) {
     
     <div className="content">
     
-    <p>Thank you so much for your purchase of a Twilightcapes. You are helping to support an individual artist and encouraging me to keep shooting. People like you make that possible.</p>
+    <p>Thank you so much for your purchase. You are helping to support an individual artist and encouraging me to keep shooting. People like you make that possible.</p>
 
     <p>Thank You!</p>
     
   
-
-    <StaticImage src="../img/toddlambert.jpg" alt="Todd Travels" />
+{/* 
+    <StaticImage src="../img/toddlambert.jpg" alt="Todd Travels" /> */}
     <br />
      <p>If you should ever have any questions or concerns, please feel free to drop me a line anytime.</p>
 
-     <p style={{textAlign:'center'}}><Link className="moreButton" to="/contact/" state={{modal: true}} >Contact Todd Now</Link></p>
+     <p style={{textAlign:'center'}}><Link className="button" to="/contact/" state={{modal: true}} >Contact</Link></p>
 
 
 

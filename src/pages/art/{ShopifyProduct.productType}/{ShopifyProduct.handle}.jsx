@@ -3,8 +3,8 @@ import { graphql, Link } from "gatsby"
 import { Layout } from "../../../components/layout"
 import isEqual from "lodash.isequal"
 import { getSrc } from "gatsby-plugin-image"
-import { FaHandPointDown } from "react-icons/fa"
-import ScrollAnimation from 'react-animate-on-scroll'
+// import { FaHandPointDown } from "react-icons/fa"
+// import ScrollAnimation from 'react-animate-on-scroll'
 // import InfoMenu from '../../../components/infomenu'
 import { StoreContext } from "../../../context/store-context"
 import { AddToCart } from "../../../components/add-to-cart"
@@ -14,7 +14,7 @@ import { Seo } from "../../../components/seo"
 import { NumericInput } from "../../../components/numeric-input"
 import ShareSocial from '../../../components/share' 
 import GoBack from "../../../components/goBack"
-import ProductDetails from "../../../components/product-details"
+// import ProductDetails from "../../../components/product-details"
 // import { Link } from 'gatsby-plugin-modal-routing'
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -25,7 +25,7 @@ import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
 
 
 import {
-  productBox,
+  // productBox,
   container,
   header,
   productImageWrapper,
@@ -40,7 +40,7 @@ import {
   breadcrumb,
   tagList,
   addToCartStyle,
-  metaSection,
+  // metaSection,
   productDescription,
 } from "./product-page.module.css"
 

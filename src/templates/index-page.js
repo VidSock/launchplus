@@ -5,10 +5,11 @@ import { graphql, Link } from "gatsby"
 import { RiArrowRightSLine } from "react-icons/ri"
 import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
-import ShareSocial from '../components/share' 
+
+// import ShareSocial from '../components/share' 
 import styled from "styled-components"
-import { FaHandPointDown } from "react-icons/fa"
-import ScrollAnimation from 'react-animate-on-scroll'
+// import { FaHandPointDown } from "react-icons/fa"
+// import ScrollAnimation from 'react-animate-on-scroll'
 // import Trumpy from '../../static/assets/trump-family-board.svg'
 // import Gearbox from "../components/gearbox"
 import BlogListHome from "../components/blog-list-home"
@@ -19,6 +20,7 @@ const CustomBox = styled.div`
 
 
 `
+
 
 
 
@@ -82,9 +84,9 @@ const HomePage = ({ data }) => {
   <body className="homepage" />
 </Helmet>
 <Seo
-          title={`Night Photo Galleries`}
-          description={`Twilightscapes night photography`}
-          image={'https://twilightscapes.com/default-og-image-blank.jpg'}
+          title={`Photo Galleries`}
+          description={`photography`}
+          image={'/default-og-image.jpg'}
         />
       
       <div className="home-banner flexbutt" style={{position:'relative', height:'auto', overflow:'hidden'}}>

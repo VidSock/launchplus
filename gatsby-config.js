@@ -178,8 +178,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Twilightscapes`,
-        short_name: `Twilightscapes`,
+        name: `YourApp`,
+        short_name: `YourApp`,
         start_url: `/`,
         background_color: `#111`,
         theme_color: `#111`,

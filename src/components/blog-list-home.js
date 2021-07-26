@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
-import { RiArrowDownLine, RiArrowRightSLine, RiStarLine } from "react-icons/ri"
-import { StaticImage } from "gatsby-plugin-image"
+import { RiArrowDownLine, RiArrowRightSLine } from "react-icons/ri"
+
 
 import PostCard from "./post-card"
 // import FeaturedGalleries from "./featured-galleries"
@@ -131,11 +131,11 @@ const PostMaker = ({ data }) => (
   
   <Link
       className="button"
-      to="/articles/"
+      to="/blog/"
       title="See More Galleries"
       style={{color:'#fff'}}
     >
-      See more articles
+      See more
       <span className="icon -right">
         <RiArrowRightSLine />
       </span>
