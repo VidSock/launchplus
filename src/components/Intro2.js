@@ -39,7 +39,7 @@ const Intro2 = () => (
 
 <div className="" style={{zIndex:'-1', width:'', height:'', backgroundSize:'cover'}}>
   
-  <StaticImage style={{backgroundSize:'cover', width:'100%'}} className="" src="../img/night316.jpg" alt="Colorado at night with Twilightscapes" />
+  <StaticImage style={{backgroundSize:'cover', width:'100%'}} className="" src="../img/4B4A9560.jpg" alt="Colorado at night with Twilightscapes" />
 
 {/* <Night319 /> */}
 
