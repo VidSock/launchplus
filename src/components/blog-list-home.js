@@ -5,7 +5,7 @@ import { RiArrowDownLine, RiArrowRightSLine } from "react-icons/ri"
 
 
 import PostCard from "./post-card"
-// import FeaturedGalleries from "./featured-galleries"
+import FeaturedGalleries from "./featured-galleries"
 
 export default function BlogListHome(props) {
   const data = props.data
@@ -26,7 +26,7 @@ const PostMaker = ({ data }) => (
   <section className="home-posts" style={{color:'#ff0000 !important'}} >
 
     
-  {/* <FeaturedGalleries /> */}
+  <FeaturedGalleries />
 
 {/* <div className="grids col-1 sm-2 lg-3">
       
@@ -106,7 +106,7 @@ const PostMaker = ({ data }) => (
 
 
 <h2 style={{fontSize:'150%', marginBottom:'1rem'}}>
-      Latest <strong>Posts</strong>{" "}
+      Latest <strong>Shoots</strong>{" "}
       <span className="icon -right">
         <RiArrowDownLine />
       </span>

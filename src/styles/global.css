@@ -303,7 +303,7 @@ outline-color: var(--primary-color); */
 }
 .actionJackson:hover{
   color: var(--text-color-inverted);
-  box-shadow:  0 0px 22px var(--primary);
+  box-shadow:  0 0px 22px var(--primary-color);
   filter: drop-shadow(0px 0px 10px rgba(155,155,155,.5)); 
 }
 
@@ -562,8 +562,9 @@ footer{background-color: #000; padding:.1rem 0rem; margin:0; display:flex; justi
 
 .home-posts a:hover{color:var(--primary-color) !important;}
 
-.post-card{color:#ccc !important;}
+.post-card{color:#ccc}
 .post-card a{text-decoration: none;}
+.post-card a:hover{color:var(--primary) !important;}
  body.carto .social-icons, body.carto .backdrop1{  display: none !important;}
 
 body.carto{min-height:100vh !important;}
@@ -1470,7 +1471,7 @@ border:1px solid #222;
         height: 100vh;
         background-repeat: no-repeat;
         background-position: left top;
-        /* background-image: linear-gradient(#111212 40%, #232325  100%); */
+        background-image: linear-gradient(#052d5c 40%, #070f31  100%);
           
             animation: poof 1s forwards;
             animation-delay: 1.5s;

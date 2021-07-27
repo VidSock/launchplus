@@ -99,7 +99,7 @@ export function Layout({ children }) {
 
 {/* <IoMdFingerPrint style={{fontSize:'60px', marginLeft:'20px' }}/> */}
 
-<span>MENU</span>
+{/* <span>MENU</span> */}
     <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>
     <div className="spinner diagonal part-2"></div>

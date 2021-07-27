@@ -1,10 +1,10 @@
 ---
 template: blog-post
-title: Your Second Blog Post
+title: Senior Shoot | with McKenzee
 slug: /second-post
 date: 2021-07-19 11:37
 description: "Your Second blog post description"
-featuredImage: /assets/default-article-header.png
+featuredImage: /assets/DSC03822.jpg
 ---
 
 ## Second Blog Post

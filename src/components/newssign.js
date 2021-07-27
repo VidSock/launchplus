@@ -56,9 +56,9 @@ const NewsletterPage = () => (
 <br />
 
             
-              <span style={{fontSize:'120%'}}><strong>Photographer's Newsletter</strong></span><br />
+              <span style={{fontSize:'120%'}}><strong>Quick Quote</strong></span><br />
               
-              <span style={{fontSize:'85%'}}>join our photography newsletter</span><br /><br />
+              <span style={{fontSize:'85%'}}>send me your email for an instant quote</span><br /><br />
 
              <div className="signbox" style={{display:'flex',}}>
 
