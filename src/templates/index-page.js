@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet"
 import Newsignup from "../components/newssign"
 // import ShareSocial from '../components/share' 
 import styled from "styled-components"
-// import { FaHandPointDown } from "react-icons/fa"
+import { AiOutlinePicture } from "react-icons/ai"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import Trumpy from '../../static/assets/trump-family-board.svg'
 // import Gearbox from "../components/gearbox"
@@ -32,6 +32,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         tagline
+        youtube
         featuredImage {
           childImageSharp {
             gatsbyImageData(layout: CONSTRAINED, width: 585, height: 439)
@@ -77,6 +78,10 @@ const HomePage = ({ data }) => {
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
   
+    const Url = "https://www.youtube.com/embed/" + frontmatter.youtube + "?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=" + frontmatter.youtube + ""
+
+
+
   return (
     <CustomBox style={{}}>
     <Layout>
@@ -107,7 +112,7 @@ const HomePage = ({ data }) => {
             dangerouslySetInnerHTML={{ __html: html }}
          style={{textShadow:'2px 2px 0 #000'}} />
   
-          
+  {/* <AiOutlinePicture style={{fontSize:'30vw'}} /> */}
 
 
           
@@ -115,7 +120,7 @@ const HomePage = ({ data }) => {
 
       </div>
 
-      <div className="flexcheek" style={{position:'relative', overflow:'hidden', paddingTop:'10vh'}}>
+      <div className="flexcheek" style={{position:'relative', overflow:'hidden', paddingTop:'10vh', color:'#fff'}}>
       {/* <Intro2 /> */}
      {/* <Newsignup /> */}
       
@@ -129,6 +134,8 @@ const HomePage = ({ data }) => {
           >
             {frontmatter.tagline}
           </p>
+
+
 
 
      <Link
@@ -161,9 +168,9 @@ const HomePage = ({ data }) => {
 
     <div className="video-foreground" style={{position:'absolute', zIndex:'-1'}}>
       
-<iframe className="video" width="100%" height="350" src="https://www.youtube.com/embed/vWNkRK6-oU4?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=vWNkRK6-oU4" frameBorder="0" allowFullScreen></iframe>
+<iframe id="youtube" className="video" width="100%" height="350" src={Url} frameBorder="0" />
 
-    
+
 
 
 
