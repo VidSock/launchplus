@@ -26,7 +26,7 @@ const PostMaker = ({ data }) => (
   <section className="home-posts" style={{color:'#ff0000 !important'}} >
 
     
-  <FeaturedGalleries />
+  {/* <FeaturedGalleries /> */}
 
 {/* <div className="grids col-1 sm-2 lg-3">
       
