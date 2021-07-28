@@ -71,7 +71,12 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 .vid-info .acronym { display: none; }
 }
 
-
+.carto:hover{
+  background: rgba(0,0,0,0.2); transition: 1s background;
+}
+/* .crypto:hover{
+  background:#ff0000;
+} */
 
 .vidbox {
   overflow: hidden;

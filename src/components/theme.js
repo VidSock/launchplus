@@ -33,7 +33,7 @@ const themeStyles = {
       border: "none",
       cursor: "pointer",
       mt: "-2px",
-      p: "0 20px 0 0",
+      p: "0 0 0 0",
       "&:hover": {
         color: "var(--primary-color)",
       },
